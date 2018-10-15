@@ -1,0 +1,15 @@
+<div class="task-list-page-component" *ngIf="isCaseUi===false">
+  <h1>{{'ACTIVE-TASK-LIST-TITLE' | translate}}</h1>
+  <educama-task-list
+    [taskList]="taskListModel.taskList"
+    (taskSelectedEvent)="onTaskSelectedEvent($event)"
+  >
+  </educama-task-list>
+</div>
+<div class="task-list-page-component-caseui" *ngIf="isCaseUi===true">
+  <educama-caseui-task-list
+    [taskList]="taskListModel.taskList"
+    (taskSelectedEvent)="onTaskSelectedEvent($event)"
+  >
+  </educama-caseui-task-list>
+</div>

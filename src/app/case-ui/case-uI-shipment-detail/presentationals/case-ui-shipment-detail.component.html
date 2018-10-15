@@ -1,0 +1,28 @@
+<p-panel header="{{'SHIPMENT-DETAILS'|translate}}">
+  <div class="ui-g">
+    <div class="ui-g-12 ui-md-2">
+      <label>{{'SHIPMENT-RESOURCE_TRACKING-ID'|translate}}:</label>
+    </div>
+    <div class="ui-g-12 ui-md-10 ">
+      <a>{{shipment?.trackingId}}</a>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+      <label>{{'SHIPMENT-RESOURCE_SENDER'|translate}}:</label>
+    </div>
+    <div class="ui-g-12 ui-md-10 ">
+      <a>{{shipment?.sender.name}}</a>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+      <label>{{'SHIPMENT-RESOURCE_RECEIVER' | translate}}:</label>
+    </div>
+    <div class="ui-g-12 ui-md-10 ">
+      <a>{{shipment?.receiver.name}}</a>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+      <label>{{'SHIPMENT_STATUS' | translate}}:</label>
+    </div>
+    <div class="ui-g-12 ui-md-10 ">
+      <a>{{shipment?.status| translate}}</a>
+    </div>
+  </div>
+</p-panel>

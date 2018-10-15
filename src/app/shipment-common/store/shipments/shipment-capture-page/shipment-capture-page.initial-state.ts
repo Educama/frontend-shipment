@@ -1,0 +1,1 @@
+export const SHIPMENT_CAPTURE_SLICE_INITIAL_STATE = {};
